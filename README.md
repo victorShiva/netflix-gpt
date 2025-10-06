@@ -2,6 +2,8 @@
 
 - npx create-react-app netflix-gpt
 - configured tailwind
+- Header
+- Login Form
 
 ## feature of netflix
 
