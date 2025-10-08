@@ -3,7 +3,13 @@
 - npx create-react-app netflix-gpt
 - configured tailwind
 - Header
+- Routing of App
 - Login Form
+- Sign Up form
+- Form Validation
+- useReff Hook
+- Firebase Setup
+- Deploying our app to production
 
 ## feature of netflix
 
