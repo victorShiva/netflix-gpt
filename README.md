@@ -10,6 +10,13 @@
 - useReff Hook
 - Firebase Setup
 - Deploying our app to production
+- Create SignUp User Account
+- Implement Sign In User Authentication
+- setup redux-toolkit
+- create appStore and userSlice
+- Implemented Sign out
+- Update Profile Info
+- Fetch movies from TMDB
 
 ## feature of netflix
 
