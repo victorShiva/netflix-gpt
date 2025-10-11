@@ -17,6 +17,8 @@
 - Implemented Sign out
 - Update Profile Info
 - Fetch movies from TMDB
+- BugFix : Signup user displayName and profile photo picture update
+- BugFix : if the user is not loggedin redirect /browse to login page and vise-versa
 
 ## feature of netflix
 
