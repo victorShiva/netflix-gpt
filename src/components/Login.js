@@ -5,8 +5,9 @@ import { auth } from '../utils/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BG_IMAGE } from '../utils/constants';
 
-console.log(auth);
+//console.log(auth);
 
 const Login = () => {
     const [errorMessage, setErrorMessage] = useState(null);
@@ -16,7 +17,6 @@ const Login = () => {
     const password = useRef(null);
     const dispatch = useDispatch();
 
-    console.log("render");
     useEffect(() => { console.log("useEffect"); }, [])
     const handleButtonClick = () => {
         //validate the form data
@@ -70,8 +70,8 @@ const Login = () => {
     return (
         <div className='absolute w-screen h-screen '>
             <img
-                className='absolute w-full h-full object-cover bg-black/90'
-                src="https://assets.nflxext.com/ffe/siteui/vlv3/d482944d-eab4-4a64-89c9-a07a508a6e42/web/IN-en-20250929-TRIFECTA-perspective_4cf0c8a1-bd35-4d72-a49f-165021531dde_small.jpg"
+                className='absolute w-full h-full object-cover bg-gradient-to-b from-black'
+                src={BG_IMAGE}
                 alt="bg-img" />
 
             <Header />
@@ -90,7 +90,7 @@ const Login = () => {
                         ref={name}
                         type="text"
                         placeholder='Full Name'
-                        className='p-3 my-3 w-80 bg-gray-800/60 text-lg rounded-[5px]'
+                        className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
                     />
                 }
 
@@ -98,7 +98,7 @@ const Login = () => {
                     ref={email}
                     type="email"
                     placeholder='Email Address'
-                    className='p-3 my-3 w-80 bg-gray-800/60 text-lg rounded-[5px]'
+                    className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
                 />
 
 
@@ -106,7 +106,7 @@ const Login = () => {
                     ref={password}
                     type="password"
                     placeholder='Password'
-                    className='p-3 my-3 w-80 bg-gray-800/60 text-lg rounded-[5px]'
+                    className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
                 />
 
                 <p

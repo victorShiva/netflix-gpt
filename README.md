@@ -18,7 +18,18 @@
 - Update Profile Info
 - Fetch movies from TMDB
 - BugFix : Signup user displayName and profile photo picture update
-- BugFix : if the user is not loggedin redirect /browse to login page and vise-versa
+- BugFix : if the user is not loggedin redirect /browse to login page and vise-versa.
+- Unsubscribed to the onAuthStateChanged callback.
+- Add hardcoded values to the constants file.
+- Register TMDB API & create an app & get access token
+- Get data from TMDB now playing movies List API
+- Custom Hook for Now Playing movies
+- Create movieSlice
+- Update store with movie data
+- Fetch data for trailer videos API
+- update movieSlice with movie trailer
+- Embedded the youtube video and make it autoplay and mute
+-
 
 ## feature of netflix
 
