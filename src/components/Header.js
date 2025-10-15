@@ -41,11 +41,11 @@ const Header = () => {
     }, [])
 
     return (
-        <div className="absolute z-20 w-screen px-8 py-2 bg-gradient-to-b from-black flex justify-between items-center">
+        <div
+            className="absolute z-40 w-full px-6 py-2 bg-gradient-to-b from-black flex justify-between items-center">
             <img
                 className="w-52 h-24"
                 src={LOGO} alt="netflix-logo" />
-
             {
                 user &&
                 <div
@@ -59,7 +59,7 @@ const Header = () => {
                         alt="userLogo" />
                     <button
                         className="bg-red-500 py-1 px-2 rounded-sm hover:bg-red-600 box-border shadow-lg hover:shadow-red-600/50 shadow-green-600/50 font-bold text-sm"
-                        onClick={handleSignOut}>(Sign Out)
+                        onClick={handleSignOut}> (Sign Out)
                     </button>
                 </div>
             }

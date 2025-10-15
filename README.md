@@ -29,7 +29,11 @@
 - Fetch data for trailer videos API
 - update movieSlice with movie trailer
 - Embedded the youtube video and make it autoplay and mute
--
+- Build secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- usePopulerMovies Custom hook
 
 ## feature of netflix
 

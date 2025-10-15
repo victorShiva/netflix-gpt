@@ -17,7 +17,6 @@ const Login = () => {
     const password = useRef(null);
     const dispatch = useDispatch();
 
-    useEffect(() => { console.log("useEffect"); }, [])
     const handleButtonClick = () => {
         //validate the form data
         const message = checkValidData(email.current.value, password.current.value);
@@ -68,7 +67,7 @@ const Login = () => {
     }
 
     return (
-        <div className='absolute w-screen h-screen '>
+        <div className='absolute w-screen h-screen box-border'>
             <img
                 className='absolute w-full h-full object-cover bg-gradient-to-b from-black'
                 src={BG_IMAGE}
