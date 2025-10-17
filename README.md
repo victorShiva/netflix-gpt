@@ -34,6 +34,7 @@
 - Build Movie Card
 - TMDB Image CDN URL
 - usePopulerMovies Custom hook
+- Create GPT Search Feature
 
 ## feature of netflix
 
