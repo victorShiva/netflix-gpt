@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addPopulerMovies } from "../utils/moviesSlice";
+import { addPopulerMovies, addTrendingMovies } from "../utils/moviesSlice";
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
 
@@ -8,13 +8,19 @@ const usePopulerMovies = () => {
     const dispatch = useDispatch();
 
     const getPopulerMovies = async () => {
-        const data = await fetch("https://api.themoviedb.org/3/movie/popular?language=en-IN&page=2", API_OPTIONS);
+        const data = await fetch("https://api.themoviedb.org/3/movie/popular?language=en-IN&page=1", API_OPTIONS);
         const json = await data.json();
         dispatch(addPopulerMovies(json.results));
+    }
+    const getTrendingMovies = async () => {
+        const data = await fetch("https://api.themoviedb.org/3/movie/popular?language=en-IN&page=4", API_OPTIONS);
+        const json = await data.json();
+        dispatch(addTrendingMovies(json.results));
     }
 
     useEffect(() => {
         getPopulerMovies();
+        getTrendingMovies()
     }, [])
 }
 

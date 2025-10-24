@@ -7,11 +7,14 @@ const GPTSearchPage = () => {
     return (
         <div>
             <img
-                className='absolute w-full h-full object-cover bg-gradient-to-b from-black'
+                className='w-full h-full object-cover bg-gradient-to-b from-black fixed'
                 src={BG_IMAGE}
                 alt="bg-img" />
-            <GPTSearchBar />
-            <GPTMovieSuggestion />
+            <div>
+                <GPTSearchBar />
+                <GPTMovieSuggestion />
+            </div>
+
         </div>
     )
 }
