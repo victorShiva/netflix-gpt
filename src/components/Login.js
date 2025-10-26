@@ -77,10 +77,10 @@ const Login = () => {
 
             <form
                 onSubmit={(e) => e.preventDefault()}
-                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-black/80 flex flex-col p-10 items-center rounded-sm box-border min-h-[400px]'
+                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-black/80 flex flex-col p-5 md:p-10 items-center rounded-sm box-border min-h-[200px] md:min-h-[400px]'
             >
                 <h1
-                    className='font-bold text-4xl self-start mb-3'>
+                    className='font-bold text-2xl md:text-4xl self-start mb-3'>
                     {isSignInForm ? "Sign In" : "Sign Up"}
                 </h1>
 
@@ -89,7 +89,7 @@ const Login = () => {
                         ref={name}
                         type="text"
                         placeholder='Full Name'
-                        className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
+                        className='p-3 my-3 w-60 md:w-80 bg-gray-700/60 text-lg rounded-[5px]'
                     />
                 }
 
@@ -97,7 +97,7 @@ const Login = () => {
                     ref={email}
                     type="email"
                     placeholder='Email Address'
-                    className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
+                    className='p-3 my-3 w-60 md:w-80 bg-gray-700/60 text-lg rounded-[5px]'
                 />
 
 
@@ -105,7 +105,7 @@ const Login = () => {
                     ref={password}
                     type="password"
                     placeholder='Password'
-                    className='p-3 my-3 w-80 bg-gray-700/60 text-lg rounded-[5px]'
+                    className='p-3 my-3 w-60 md:w-80 bg-gray-700/60 text-lg rounded-[5px]'
                 />
 
                 <p
@@ -114,7 +114,7 @@ const Login = () => {
                 </p>
 
                 <button
-                    className='py-2 my-3 bg-red-600 w-80  font-bold rounded-[5px]'
+                    className='py-2 my-3 bg-red-600 w-60 md:w-80  font-bold rounded-[5px]'
                     onClick={handleButtonClick}>
                     {isSignInForm ? "Sign In" : "Sign Up"}
                 </button>

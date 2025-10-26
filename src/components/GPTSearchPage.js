@@ -7,7 +7,7 @@ const GPTSearchPage = () => {
     return (
         <div>
             <img
-                className='w-full h-full object-cover bg-gradient-to-b from-black fixed'
+                className='w-full h-screen object-cover bg-gradient-to-b from-black fixed'
                 src={BG_IMAGE}
                 alt="bg-img" />
             <div>

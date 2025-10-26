@@ -20,7 +20,6 @@ const apiMovies = [
 ];
 
 const getMovies = (category) => {
-    const delay = Math.floor(Math.random() * 4000) + 1000;
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const gptMovies = apiMovies.find(movies => {
@@ -29,7 +28,7 @@ const getMovies = (category) => {
             if (gptMovies) {
                 resolve(gptMovies)
             }
-        }, delay);
+        }, 200);
     })
 }
 

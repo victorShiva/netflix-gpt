@@ -51,9 +51,9 @@ const Header = () => {
 
     return (
         <div
-            className="absolute z-40 w-full px-6 py-2 bg-gradient-to-b from-black flex justify-between items-center ">
+            className="absolute z-40 w-full px-6 py-1 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between items-center ">
             <img
-                className="w-52 h-24"
+                className="w-32 h-14 -mt-2 md:mt-0 md:w-52 md:h-20"
                 src={LOGO} alt="netflix-logo" />
             {
                 user &&
@@ -61,13 +61,13 @@ const Header = () => {
                     className="flex items-center gap-4"
                 >
                     {isShowGPTSearchEnable &&
-                        <select className="py-1 px-2 m-2 bg-gray-800 text-white" onChange={(e) => handleLanguageChange(e)}>
+                        <select className="text-xs md:text-sm py-1 px-2 m-2 bg-gray-800 text-white" onChange={(e) => handleLanguageChange(e)}>
                             {
                                 SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)
                             }
                         </select>
                     }
-                    <div className="flex items-end">
+                    <div className="items-end hidden md:flex">
 
                         <h1 className="text-cyan-400 capitalize mr-1 font-semibold underline cursor-pointer">{user.displayName}</h1>
                         <img
@@ -77,11 +77,11 @@ const Header = () => {
                             alt="userLogo" />
                     </div>
                     <button
-                        className="py-1 px-2 font-semibold hover:outline-none hover:outline-2 hover:outline-blue-800/80 hover:bg-red-700/50 transition-all rounded-sm text-white"
+                        className=" text-xs md:text-sm py-1 px-2 font-semibold hover:outline-none hover:outline-2 hover:outline-blue-800/80 hover:bg-red-700/50 transition-all rounded-sm text-white"
                         onClick={handleGPTSearchClick}
                     >{isShowGPTSearchEnable ? "Home Page" : "GPT Search"}</button>
                     <button
-                        className="text-gray-100 bg-red-500 py-1 px-2 rounded-sm hover:bg-red-600 box-border shadow-lg hover:shadow-red-600/50 shadow-green-600/50 font-semibold text-sm"
+                        className="text-xs md:text-sm text-gray-100 bg-red-500 py-1 px-2 rounded-sm hover:bg-red-600 box-border shadow-lg hover:shadow-red-600/50 shadow-green-600/50 font-semibold"
                         onClick={handleSignOut}> (Sign Out)
                     </button>
                 </div>
